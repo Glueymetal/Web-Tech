@@ -1,1 +1,3 @@
-# Web--Tech
+# Web-Tech
+
+Repository maintained for Web Technologies class...
