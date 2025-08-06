@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Weather Dashboard</h1>
+      <form id="search-form">
+        <input type="text" id="city-input" placeholder="Enter city name" required />
+        <button type="submit">Search</button>
+      </form>
+      <p class="today-date" id="today-date"></p>
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="welcome-section">
+      <h2>Welcome to Weather Dashboard</h2>
+      <p>Enter a city name above to see the current weather and a 3-day forecast.</p>
+    </section>
+
+    <!-- Weather Display -->
+    <main id="weather-display" class="hidden">
+      <h2 id="city-name">City Name</h2>
+      <div class="weather-main">
+        <img id="weather-icon" alt="Weather Icon"/>
+        <p id="temperature">-- °C</p>
+      </div>
+      <p id="description">Description</p>
+
+      <section class="weather-grid">
+        <article class="card">
+          <h3>Humidity</h3>
+          <p id="humidity">--%</p>
+        </article>
+
+        <article class="card">
+          <h3>Wind Speed</h3>
+          <p id="wind-speed">-- km/h</p>
+        </article>
+
+        <article class="card">
+          <h3>Min Temp</h3>
+          <p id="min-temp">-- °C</p>
+        </article>
+
+        <article class="card">
+          <h3>Max Temp</h3>
+          <p id="max-temp">-- °C</p>
+        </article>
+
+        <article class="card">
+          <h3>Sunrise</h3>
+          <p id="sunrise">--:--</p>
+        </article>
+
+        <article class="card">
+          <h3>Sunset</h3>
+          <p id="sunset">--:--</p>
+        </article>
+      </section>
+    </main>
+
+    <!-- 3-Day Forecast -->
+    <section id="forecast" class="hidden">
+      <h2>3-Day Forecast</h2>
+      <div class="forecast-container" id="forecast-container"></div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Weather Dashboard</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
