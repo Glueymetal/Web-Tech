@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="background-overlay"></div>
   <div class="container">
     <h1>Community Event Signup</h1>
     <form id="eventForm" novalidate>
@@ -36,14 +37,15 @@
       </div>
 
       <div class="form-group">
-        <label for="timeslot">Preferred Time Slot *</label>
-        <select id="timeslot" name="timeslot" required>
-          <option value="">-- Select --</option>
-          <option value="morning">Morning (9AM – 12PM)</option>
-          <option value="afternoon">Afternoon (1PM – 4PM)</option>
-          <option value="evening">Evening (5PM – 8PM)</option>
-        </select>
-        <div class="error" id="timeslotError"></div>
+       
+      <label for="interests">What are you most interested in?</label>
+      <select id="interests" name="interests">
+        <option value="workshops">Workshops</option>
+        <option value="networking">Networking</option>
+        <option value="volunteering">Volunteering</option>
+        <option value="fun">Just Having Fun</option>
+      </select>
+
       </div>
 
       <div class="form-group">
