@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Community Event Signup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Community Event Signup</h1>
+    <form id="eventForm" novalidate>
+      
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required />
+        <div class="error" id="nameError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required />
+        <div class="error" id="emailError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" required />
+        <div class="error" id="phoneError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age *</label>
+        <input type="number" id="age" name="age" min="5" max="100" required />
+        <div class="error" id="ageError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="timeslot">Preferred Time Slot *</label>
+        <select id="timeslot" name="timeslot" required>
+          <option value="">-- Select --</option>
+          <option value="morning">Morning (9AM – 12PM)</option>
+          <option value="afternoon">Afternoon (1PM – 4PM)</option>
+          <option value="evening">Evening (5PM – 8PM)</option>
+        </select>
+        <div class="error" id="timeslotError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="specialNeeds">Any Special Requirements?</label>
+        <textarea id="specialNeeds" name="specialNeeds" rows="4" placeholder="E.g., wheelchair access, vegetarian meals..."></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
