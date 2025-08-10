@@ -10,7 +10,6 @@ document.getElementById("eventForm").addEventListener("submit", function (e) {
   const email = document.getElementById("email").value.trim();
   const phone = document.getElementById("phone").value.trim();
   const age = parseInt(document.getElementById("age").value.trim(), 10);
-  const timeslot = document.getElementById("timeslot").value;
 
   if (name === "") {
     document.getElementById("nameError").innerText = "Name is required.";
@@ -33,6 +32,8 @@ document.getElementById("eventForm").addEventListener("submit", function (e) {
     document.getElementById("ageError").innerText = "You must be at least 18 years old.";
     isValid = false;
   }
+
+  // No timeslot check here, since you removed it from HTML
 
   if (isValid) {
     alert("Form submitted successfully!");
