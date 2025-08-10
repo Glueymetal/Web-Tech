@@ -34,11 +34,6 @@ document.getElementById("eventForm").addEventListener("submit", function (e) {
     isValid = false;
   }
 
-  if (!timeslot) {
-    document.getElementById("timeslotError").innerText = "Select a time slot.";
-    isValid = false;
-  }
-
   if (isValid) {
     alert("Form submitted successfully!");
     this.reset();
